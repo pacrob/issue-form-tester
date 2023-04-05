@@ -16,14 +16,28 @@ body:
       value: "A bug happened!"
     validations:
       required: true
-  - type: dropdown
-    id: version
+  - type: input
+    id: lib-version
     attributes:
       label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+      description: Which version of our software are you using?
+      placeholder: x.x.x
+    validations:
+      required: true
+  - type: input
+    id: py-version
+    attributes:
+      label: Python Version
+      description: Which version of Python are you using?
+      placeholder: x.x.x
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      description: Which operating system are you using?
+      placeholder: osx/linux/win
     validations:
       required: true
   - type: textarea
@@ -32,11 +46,11 @@ body:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
-  - type: checkboxes
-    id: terms
+  - type: textarea
+    id: cute-animal
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Cute animal photo
+      description: Paste a picture of a cute animal in the box below
+      value: "[Put a link to a cute animal picture inside the parenthesis-->]()"
+    validations:
+      required: true
