@@ -6,6 +6,9 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+  - type: markdown
+    attributes:
+      value: "## What was wrong"
   - type: textarea
     id: what-happened
     attributes:
@@ -15,6 +18,30 @@ body:
       value: "A bug happened!"
     validations:
       required: true
+  - type: textarea
+    id: code-that-caused
+    attributes:
+      label: Code that produced the error
+      render: python
+    validations:
+      required: false
+  - type: textarea
+    id: error-output
+    attributes:
+      label: Full error output
+      render: shell
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Potential Solutions"
+  - type: textarea
+    id: how-to-fix
+    attributes:
+      label: Fill this section in if you know how this could or should be fixed
+      description: Include any relevant examples or reference material
+    validations:
+      required: false
   - type: input
     id: lib-version
     attributes:
