@@ -4,10 +4,6 @@ labels: ["bug"]
 body:
   - type: markdown
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: markdown
-    attributes:
       value: "## What was wrong"
   - type: textarea
     id: what-happened
@@ -45,8 +41,8 @@ body:
   - type: input
     id: lib-version
     attributes:
-      label: Version
-      description: Which version of our software are you using?
+      label: <PYPI_NAME> Version
+      description: Which version of <PYPI_NAME> are you using?
       placeholder: x.x.x
     validations:
       required: false
@@ -69,7 +65,7 @@ body:
   - type: textarea
     id: pip-freeze
     attributes:
-      label: Output from `pip-freeze`
+      label: Output from pip-freeze
       description: Run `pip-freeze` and paste the output below
       render: shell
   - type: textarea

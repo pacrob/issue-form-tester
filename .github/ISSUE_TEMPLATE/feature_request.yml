@@ -2,10 +2,6 @@ name: Feature Request
 description: Request a new feature
 labels: ["feature_request"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to request a new feature!
   - type: textarea
     id: feature-description
     attributes:
