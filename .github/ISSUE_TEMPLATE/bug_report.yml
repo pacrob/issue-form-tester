@@ -20,7 +20,7 @@ body:
     id: code-that-caused
     attributes:
       label: Code that produced the error
-      description: Will format to Python, no backticks needed
+      description: Formats to Python, no backticks needed
       render: python
     validations:
       required: false
@@ -28,7 +28,7 @@ body:
     id: error-output
     attributes:
       label: Full error output
-      description: Will format to shell, no backticks needed
+      description: Formats to shell, no backticks needed
       render: shell
     validations:
       required: false
