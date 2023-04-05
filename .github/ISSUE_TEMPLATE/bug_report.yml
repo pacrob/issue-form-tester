@@ -49,7 +49,7 @@ body:
       description: Which version of our software are you using?
       placeholder: x.x.x
     validations:
-      required: true
+      required: false
   - type: input
     id: py-version
     attributes:
@@ -57,7 +57,7 @@ body:
       description: Which version of Python are you using?
       placeholder: x.x.x
     validations:
-      required: true
+      required: false
   - type: input
     id: os
     attributes:
@@ -65,7 +65,7 @@ body:
       description: Which operating system are you using?
       placeholder: osx/linux/win
     validations:
-      required: true
+      required: false
   - type: textarea
     id: pip-freeze
     attributes:
